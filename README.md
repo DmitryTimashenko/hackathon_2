@@ -99,6 +99,8 @@ class A {
 
 https://www.geeksforgeeks.org/length-of-smallest-subarray-to-be-removed-to-make-sum-of-remaining-elements-divisible-by-k/
 
+https://leetcode.com/problems/make-sum-divisible-by-p/
+
 ***Ограничения:***
 
 1 <= nums.length <= 105  
@@ -139,6 +141,8 @@ class A {
 
 https://afteracademy.com/blog/find-the-closest-palindrome
 
+https://leetcode.com/problems/find-the-closest-palindrome/
+
 ***Ограничения:***
 
 1 <= s.length <= 18  
@@ -172,6 +176,8 @@ class A {
 https://ru.stackoverflow.com/questions/710701/partition-problem-%D1%80%D0%B0%D0%B7%D0%B1%D0%B8%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D1%81-%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9-%D1%81%D1%83%D0%BC%D0%BC%D0%BE%D0%B9-%D0%B2%D0%B0%D1%80
 
 https://www.geeksforgeeks.org/partition-problem-dp-18/
+
+https://leetcode.com/problems/partition-equal-subset-sum/
 
 ***Ограничения:***
 
