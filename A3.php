@@ -37,6 +37,10 @@ class A
 
     function getPrimePal($n)
     {
+        if (10000000 < $n && $n < 100000000) {
+            return 100030001;
+        }
+
         while (true) {
             if (strlen($n) % 2 === 0 && $n > 11) {
                 $n = intval(pow(10, ceil(log10($n + 1))));
