@@ -68,6 +68,8 @@ class A {
 
 https://www.geeksforgeeks.org/palindromic-primes/
 
+https://leetcode.com/problems/make-sum-divisible-by-p/
+
 Дано число ***n***, необходимо найти простое число-палиндром, которое больше или равно числу ***n***.
 
 ***Ограничения:***
