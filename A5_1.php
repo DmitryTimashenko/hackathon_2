@@ -22,16 +22,16 @@ class A
             $tail = substr($n, $middleId, intdiv(strlen($n),2));
         }
 
-        if (strrev($tail) > $head) {
+        if (strrev($tail) == $head) {
+            $nextPal = $this->getNextPal($head, $middle);
+            $prevPal =  $this->getPrevPal($head, $middle);
+        } else if ($tail < strrev($head)) {
             $nextPal = $this->getPal($head, $middle);
             $prevPal =  $this->getPrevPal($head, $middle);
-        } else if (strrev($tail) < $head) {
-            $nextPal = $this->getNextPal($head, $middle);
-            $prevPal =  $this->getPal($head, $middle);
         } else {
             $nextPal = $this->getNextPal($head, $middle);
-            $prevPal =  $this->getPrevPal($head, $middle);
-        }
+            $prevPal =  $this->getPal($head, $middle);
+        } 
 
         var_dump($nextPal);
         var_dump($prevPal);
@@ -98,8 +98,9 @@ class A
     }
 }
 
-
-var_dump((new A())->closestPal("100"));
+// var_dump((new A())->closestPal("10"));
+// var_dump((new A())->closestPal("100"));
 //var_dump((new A())->closestPal("1000"));
 //var_dump((new A())->closestPal("11011"));
-//var_dump((new A())->closestPal("123892133"));
+// var_dump((new A())->closestPal("123892133"));
+// var_dump((new A())->closestPal("45654"));
