@@ -33,9 +33,6 @@ class A
             $prevPal =  $this->getPal($head, $middle);
         } 
 
-        var_dump($nextPal);
-        var_dump($prevPal);
-
         $nextDistance = $nextPal - $n;
         $prevDistance = $n - $prevPal;
 
