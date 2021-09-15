@@ -181,6 +181,8 @@ https://www.geeksforgeeks.org/partition-problem-dp-18/
 
 https://leetcode.com/problems/partition-equal-subset-sum/
 
+https://leetcode.com/problems/split-array-with-same-average/
+
 ***Ограничения:***
 
 1 <= nums.length <= 30  
