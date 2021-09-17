@@ -19,7 +19,7 @@ class A {
     } 
 
     function isPal($x) { 
-        return $x == strrev($x);
+        return (string)$x === strrev((string)$x);
     } 
 
     function getPrimePal($n) {
@@ -89,6 +89,7 @@ class A {
             9927299, 9931399, 9932399, 9935399, 9938399, 9957599, 9965699, 9978799, 9980899, 9981899, 9989899, 100030001
         ];
     }
+
 }
 
 // var_dump( (new A)->twoSum([3,2,4], 6) );

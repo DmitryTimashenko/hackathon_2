@@ -11,22 +11,31 @@ class A
             return false;
         }
 
-        $sum = array_sum($nums);
-        $mask = array_fill(0, $sum + 1, 0);
-        $mask[0] = 1;
+        $totalSum = array_sum($nums);
+        $totalN = count($nums);
+        $map = [];
+        $map[0] = 1;
 
-        for($i = 0; $i < count($nums); $i++) {
-            for($j = $sum; $j >= 0; $j--) {
-                if($mask[$j]) {
-                    $mask[$j + $nums[$i]] |= $mask[$j] << 1;
+        if($totalSum === 0) {
+            return true;
+        }
+
+        for($i = 0; $i < $totalN; $i++) {
+            for($s = $totalSum; $s >=0; $s--) {
+                if(isset($map[$s])) {
+                    if(isset($map[$s + $nums[$i]])) {
+                        $map[$s + $nums[$i]] |= $map[$s] << 1;
+                    } else {
+                        $map[$s + $nums[$i]] = $map[$s] << 1;
+                    }
                 }
             }
         }
 
-        for($j = 0; $j <= $sum; $j++) {
-            if(($j * count($nums)) % $sum === 0) {
-                $n = intdiv(($j * count($nums)), $sum);
-                if($n && $n < count($nums) && ($mask[$j]&(1<<$n))) {
+        foreach ($map as $s => $counts) {
+            if(($s * $totalN) % $totalSum === 0) {
+                $n = intdiv(($s * $totalN), $totalSum);
+                if($n && $n < $totalN && ($counts & (1<<($n)))) {
                     return true;
                 }
             }
@@ -34,23 +43,19 @@ class A
     
         return false;
     }
-
-
-    
 }
 
     
 
-//
-var_dump((new A())->canSplit([1,2,3,4,5,6,7,8]));
-var_dump((new A())->canSplit([17,5,5,1,14,10,13,1,6]));
-var_dump((new A())->canSplit([0]));
-var_dump((new A())->canSplit([0,13,13,7,5,0,10,19,5]));
-var_dump((new A())->canSplit([1,6,1]));
-var_dump((new A())->canSplit([60,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30]));
-var_dump((new A())->canSplit([17,3,7,12,1]));
-var_dump((new A())->canSplit([18,0,16,2]));
-var_dump((new A())->canSplit([10,29,13,53,33,48,76,70,5,5]));
+//var_dump((new A())->canSplit([1,2,3,4,5,6,7,8]));
+//var_dump((new A())->canSplit([17,5,5,1,14,10,13,1,6]));
+//var_dump((new A())->canSplit([0]));
+//var_dump((new A())->canSplit([0,13,13,7,5,0,10,19,5]));
+//var_dump((new A())->canSplit([1,6,1]));
+//var_dump((new A())->canSplit([60,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30]));
+//var_dump((new A())->canSplit([17,3,7,12,1]));
+//var_dump((new A())->canSplit([18,0,16,2]));
+//var_dump((new A())->canSplit([10,29,13,53,33,48,76,70,5,5]));
 
 
 

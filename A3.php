@@ -23,7 +23,7 @@ class A
 
         if ($n >= 10000) {
             for ($i = 101; $i <= intval(sqrt($n)); $i+=2){
-                if ($n % $i == 0) return false;
+                if ($n % $i === 0) return false;
             }
         }
 
@@ -32,7 +32,7 @@ class A
 
     function isPalindrome($x)
     {
-        return $x == strrev($x);
+        return (string)$x === strrev((string)$x);
     }
 
     function getPrimePal($n)
