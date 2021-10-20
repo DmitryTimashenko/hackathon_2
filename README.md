@@ -66,10 +66,6 @@ class A {
 
 ## Задача 3 (medium)
 
-https://www.geeksforgeeks.org/palindromic-primes/
-
-https://leetcode.com/problems/make-sum-divisible-by-p/
-
 Дано число ***n***, необходимо найти простое число-палиндром, которое больше или равно числу ***n***.
 
 ***Ограничения:***
@@ -98,10 +94,6 @@ class A {
 ## Задача 4 (medium)
 
 Дан массив ***nums***, необходимо "выделить" подмассив (возможно пустой), который если удалить из основного массива, то сумма его чисел будет делима без остатка на число ***p***. Верните длину этого подмассива или **_-1_** если такое невозможно.
-
-https://www.geeksforgeeks.org/length-of-smallest-subarray-to-be-removed-to-make-sum-of-remaining-elements-divisible-by-k/
-
-https://leetcode.com/problems/make-sum-divisible-by-p/
 
 ***Ограничения:***
 
@@ -141,10 +133,6 @@ class A {
 Под ближайшим числом подразумевается минимальная разность по модулю между найденным числом и **_n_**.  
 Если найдены два числа больше и меньше **_n_** (разность по модулю равна), то вернуть минимальное.
 
-https://afteracademy.com/blog/find-the-closest-palindrome
-
-https://leetcode.com/problems/find-the-closest-palindrome/
-
 ***Ограничения:***
 
 1 <= s.length <= 18  
@@ -174,14 +162,6 @@ class A {
 ## Задача 6 (hard)
 
 Дан массив nums целых чисел. Необходимо определить возможно ли разделить массив на два непустых массива, так чтобы среднее значения двух новых массивов равны.
-
-https://ru.stackoverflow.com/questions/710701/partition-problem-%D1%80%D0%B0%D0%B7%D0%B1%D0%B8%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D1%81-%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9-%D1%81%D1%83%D0%BC%D0%BC%D0%BE%D0%B9-%D0%B2%D0%B0%D1%80
-
-https://www.geeksforgeeks.org/partition-problem-dp-18/
-
-https://leetcode.com/problems/partition-equal-subset-sum/
-
-https://leetcode.com/problems/split-array-with-same-average/
 
 ***Ограничения:***
 
